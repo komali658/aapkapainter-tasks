@@ -1,0 +1,11 @@
+#Checking if two given strings are anagrams or not
+
+def anagram(string1,string2):
+    if sorted(string1.lower())==sorted(string2.lower()):
+        return "Yes"
+    else:
+        return "No"
+
+string1=input("Enter first string:")
+string2=input("Enter second string:")
+print(anagram(string1,string2))
